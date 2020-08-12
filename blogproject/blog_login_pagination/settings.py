@@ -56,7 +56,8 @@ ROOT_URLCONF = 'blog_login_pagination.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['blog_login_pagination/templates'],
+        'DIRS': ['blog_login_pagination/templates',
+                    '../django-accounts/accounts/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
